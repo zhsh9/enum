@@ -4,10 +4,7 @@
 mkdir -p nmap file server crypto vuln priv
 
 # config remote and local ip into env var
-echo '#pwk work env' >> ~/.zshrc
-echo 'export IP=x.x.x.x' >> ~/.zshrc
-echo 'export LOCAL=x.x.x.x' >> ~/.zshrc
-source ~/.zshrc
+IP=x.x.x.x
 
 # nmap scan:
 # - port, version, script, os, udp
