@@ -6,8 +6,8 @@ URL=http://www.qwe.com
 dirb $URL
 
 # gobuster: file + dir
-gobuster dir -u $URL -s 200,204,301,302,307,401,403 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
-gobuster dir -u $URL -x php,html,htm -s 200 -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files.txt
+gobuster dir -u $URL -s 200 -b '' -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+gobuster dir -u $URL -x php,html,htm -s 200 -b '' -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files.txt
 
 # feroxbuster: file + dir
 feroxbuster -u $URL -x php html htm --depth 2 -t 50 -w /usr/share/wordlists/dirb/common.txt

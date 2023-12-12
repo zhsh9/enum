@@ -4,7 +4,7 @@
 mkdir -p nmap file server crypto vuln priv
 
 # config remote and local ip into env var
-IP=x.x.x.x
+# IP=x.x.x.x
 
 # nmap scan:
 # - port, version, script, os, udp
